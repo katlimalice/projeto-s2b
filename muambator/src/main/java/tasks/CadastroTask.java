@@ -4,9 +4,8 @@ import org.openqa.selenium.WebDriver;
 
 import appobject.CadastroAppObject;
 
-public class CadastroTasks {
+public class CadastroTask {
 
-	public class CadastroTask {
 		private CadastroAppObject cadastroAppObject;
 
 		public CadastroTask(WebDriver driver) {
@@ -30,5 +29,7 @@ public class CadastroTasks {
 		}
 		
 	}
-}
+
+	
+
 
