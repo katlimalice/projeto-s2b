@@ -42,19 +42,22 @@ public class CadastroAppObject {
 	}
 
 	public WebElement getSenhaTextField() {
-			return this.driver.findElement(By.id("id_senha"));
+		return this.driver.findElement(By.id("id_senha"));
 
 	}
-	
+
 	public WebElement getCofirmeSenhaTextField() {
 		return this.driver.findElement(By.id("id_confirmacao_senha"));
 
 	}
 
+	public WebElement getCaptchaButton() {
+		return this.driver.findElement(By.xpath("//*[@id=\"recaptcha-anchor-label\"]"));
+	}
+
 	public WebElement getCriarContaButton() {
-		return this.driver.findElement(By.cssSelector("#wrapper > div > div > form > div.form-group.right2center > button"));
-	}
-	
+		return this.driver
+				.findElement(By.cssSelector("#wrapper > div > div > form > div.form-group.right2center > button"));
 	}
 
-
+}

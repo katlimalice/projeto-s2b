@@ -22,6 +22,7 @@ public class CadastroTask {
 			this.cadastroAppObject.getNotificarTwitterCheckBox().click();
 			this.cadastroAppObject.getSenhaTextField().sendKeys(senha);
 			this.cadastroAppObject.getCofirmeSenhaTextField().sendKeys(confirmaSenha);
+			this.cadastroAppObject.getCaptchaButton().click();
 		}
 		
 		public void criarConta() {
