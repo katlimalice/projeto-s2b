@@ -12,8 +12,8 @@ public class LoginTask {
 	}
 
 	public void preencherLogin(String usuario, String senha) {
-		this.loginAppObject.getLoginTextField().sendKeys("usuario");
-		this.loginAppObject.getSenhaTextField().sendKeys("senha");
+		this.loginAppObject.getLoginTextField().sendKeys(usuario);
+		this.loginAppObject.getSenhaTextField().sendKeys(senha);
 	}
 
 	public void entrar() {

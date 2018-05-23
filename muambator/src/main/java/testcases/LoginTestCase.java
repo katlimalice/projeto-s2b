@@ -27,15 +27,16 @@ public class LoginTestCase {
 	}
 
 	@Test
-	public void testMain() throws Throwable {
+	public void testMain() {
 
-		this.login.preencherLogin("usuario", "senha");
+		this.login.preencherLogin("katlim1", "ab123456");
+		this.login.entrar();
 
-		TimeUnit.SECONDS.sleep(5);
 	}
 
 	@After
-	public void tearDown() {
+	public void tearDown() throws Throwable {
+		TimeUnit.SECONDS.sleep(5);
 		this.driver.quit();
 	}
 }

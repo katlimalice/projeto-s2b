@@ -26,14 +26,15 @@ public class CadastroTestCase {
 	}
 
 	@Test
-	public void testMain() throws Throwable {
+	public void testMain(){
 		
-		this.cadastro.preencherCadastro("nomeusuario", "teste@teste", "nome", "sobrenome", "@twitter", "minhasenha", "minhasenha");
-		TimeUnit.SECONDS.sleep(5);
+		this.cadastro.preencherCadastro("katlim1", "katlimalice@gmail.com", "Katlim", "Martin", "katlim17", "ab123456", "ab123456");
+		this.cadastro.criarConta();
 	}
 	
 	@After
-	public void tearDown() {
+	public void tearDown() throws Throwable {
+		TimeUnit.SECONDS.sleep(5);
 		this.driver.quit();
 		
 	}

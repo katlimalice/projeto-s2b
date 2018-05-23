@@ -23,7 +23,7 @@ public class LoginAppObject {
 
 	public WebElement getEntrarButton() {
 		return this.driver
-				.findElement(By.cssSelector("#wrapper > div > div > form > div.form-group.right2center > button"));
+				.findElement(By.xpath("//*[@id=\"wrapper\"]/div/div/form/div[3]/button"));
 	}
 
 }
